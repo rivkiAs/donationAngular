@@ -1,0 +1,16 @@
+
+<div class="form">
+<h2>:נא הכנס פרטי תרומה</h2><br><br>
+
+<input class="input" placeholder="שם תורם" [(ngModel)]="donorId" />  :הכנס את קוד התורם<p></p>
+<input class="input" placeholder="מספר קרן" [(ngModel)]="kerenId" />  :הקש את מספר קרן<p></p>
+<input class="input" placeholder="מספר פעימות" [(ngModel)]="beat" />     :הקש  מספר פעימות<p></p>
+<input class="input" placeholder="סוג תרומה" [(ngModel)]="typeId" />   :הקש את סוג תרומה<p></p>
+<input class="input" placeholder="סכום " [(ngModel)]="sum" />       :הקש  סכום לתרומה<p></p>
+
+
+
+
+<p></p>
+<button class="add" (click)="add()">תרום </button>
+</div>

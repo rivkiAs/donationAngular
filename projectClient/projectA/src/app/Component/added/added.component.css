@@ -1,0 +1,32 @@
+h1 { 
+    font-family: 'Amarante', Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 3.6em;
+    line-height: 1.7em;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #555;
+  }
+
+  .btn{
+    font-size:1.5em;
+    font-weight: bold;
+    padding: 10;
+    margin: auto; 
+    font-family: 'Amarante', Tahoma, sans-serif;
+    line-height: 1.7em;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #555;
+  }
+  .div{  
+    font-family: 'Amarante', Tahoma, sans-serif;
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    background-color:  rgb(191 201 210 / 20%);
+    border-radius: 5px;
+    height: 30%;
+    width: 70%;
+    margin-top: 5%;
+}

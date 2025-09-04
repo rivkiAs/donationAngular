@@ -1,0 +1,12 @@
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Core\bin\Debug\net6.0\Association.Core.deps.json
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Core\bin\Debug\net6.0\Association.Core.dll
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Core\bin\Debug\net6.0\Association.Core.pdb
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Core\obj\Debug\net6.0\Association.Core.csproj.AssemblyReference.cache
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Core\obj\Debug\net6.0\Association.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Core\obj\Debug\net6.0\Association.Core.AssemblyInfoInputs.cache
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Core\obj\Debug\net6.0\Association.Core.AssemblyInfo.cs
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Core\obj\Debug\net6.0\Association.Core.csproj.CoreCompileInputs.cache
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Core\obj\Debug\net6.0\Association.Core.dll
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Core\obj\Debug\net6.0\refint\Association.Core.dll
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Core\obj\Debug\net6.0\Association.Core.pdb
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Core\obj\Debug\net6.0\ref\Association.Core.dll

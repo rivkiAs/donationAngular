@@ -1,0 +1,229 @@
+<div class="nav">
+    <p></p>
+    <p class="admin"> 👨‍💼מנהל</p>
+    <button class="color-btn" (click)="open1()">Kerens</button>
+    <button class="color-btn" (click)="open2()">donors</button>
+    <button class="color-btn" (click)="open4()">donations</button>
+    <button class="color-btn" (click)="open3()">donations types </button>
+</div>
+
+<!-- <div *ngIf="kerenshow">
+    <div *ngFor="let i of listKeren">
+        {{i.id}}
+    </div>
+</div> -->
+
+<!-- <div *ngIf="donorshow">
+    <div *ngFor="let i of listdonors">
+        {{i.FirstName}}
+    </div>
+</div> -->
+
+<!-- <div *ngIf="typedonorshow">
+    <div *ngFor="let i of listTypeDonor">
+        {{i.nameType}}
+    </div>
+</div>
+
+<div *ngIf="donationshow">
+    <div *ngFor="let i of listDonation">
+        {{i.id}}
+    </div>
+</div> -->
+
+<body *ngIf="kerenshow">
+    <div id="wrapper">
+        <h1>Kerens</h1>
+
+        <table id="keywords" cellspacing="0" cellpadding="0">
+            <thead>
+                <tr>
+                    <th></th>
+
+
+                    <th>target</th>
+                    <th>percent</th>
+                    <th>description</th>
+                    <th>catalogNumber</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let i of listKeren">
+                    <button class="btn" (click)="delKeren(i.id)">מחיקה</button>
+
+
+                    <td>{{i.target}}</td>
+                    <td>{{i.percent}}</td>
+                    <td>{{i.description}}</td>
+                    <td>{{i.catalogNumber}}</td>
+
+                </tr>
+            </tbody>
+        </table>
+        <button class="addK" (click)="addKeren()">add keren</button>
+    </div>
+</body>
+
+<body *ngIf="typedonorshow">
+    <div id="wrapper">
+        <h1>Donation Types</h1>
+
+        <table id="keywords" cellspacing="0" cellpadding="0">
+            <thead>
+                <tr>
+                    <th>סוג התרומה</th>
+                    <th>קוד תרומה</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let i of listTypeDonor">
+                    <td>{{i.nameType}}</td>
+
+                    <td>{{i.id}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+<body *ngIf="donationshow">
+    <div id="wrapper">
+        <h1>Donation</h1>
+
+        <table id="keywords" cellspacing="0" cellpadding="0">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>סוג תרומה</th>
+                    <th>קרן</th>
+                    <th>שם תורם</th>
+                    <th>סה"כ תרומה</th>
+                    <th>מספר פעימות</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let i of listDonation">
+                    <td>{{i.id}}</td>
+                    <td>{{i.donationType.nameType}}</td>
+                    <td>{{i.keren.description}}</td>
+                    <td>{{i.donor.firstName }} {{i.donor.lastName}}</td>
+                    <td>{{i.amountPerBeat}}</td>
+                    <td>{{i.numberOfBeats}}</td>
+                </tr>
+                <button class="btn" (click)="addDonation()">add donation</button>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+<body *ngIf="donorshow">
+    <div id="wrapper">
+        <h1>Donors</h1>
+
+        <table id="keywords" cellspacing="0" cellpadding="0">
+            <thead>
+                <tr>
+                    <th>כתובת מייל</th>
+                    <th>נייד</th>
+                    <th>עיר</th>
+                    <th>תז</th>
+                    <th>שם פרטי</th>
+                    <th>שם משפחה</th>
+                    <th>קוד </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let i of listdonors">
+                    <td>{{i.email}}</td>
+                    <td>{{i.phoneMumber}}</td>
+                    <td>{{i.cities.cityName}}</td>
+                    <td>{{i.tz}}</td>
+                    <td>{{i.firstName}}</td>
+                    <td>{{i.lastName}}</td>
+                    <td>{{i.id}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<div *ngIf="donorshow">תורמים</div>
+<table *ngIf="donorshow">
+    <thead>
+        <tr>
+            <th>שם</th>
+            <th>תז</th>
+            <th>עיר</th>
+            <th>מייל</th>
+            <th>טלפון</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let i of listdonors">
+            <td>{{i.firstName}}_{{i.lastName}}</td>
+            <td>{{i.tz}}</td>
+            <td>{{i.city}}</td>
+            <td>{{i.email}}</td>
+            <td>{{i.phoneMumber}}</td>
+        </tr>
+    </tbody>
+</table> -->
+
+
+
+<!-- 
+    <div *ngIf="donationshow">תרומות</div>
+    <table *ngIf="donationshow">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>typedonor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let i of listDonation">
+                <td>{{i.id}}</td>
+                <td>{{i.donationTypeId}}</td>
+            </tr>
+        </tbody>
+</table> -->
+
+<!-- 
+<div *ngIf="typedonorshow">סוגי תרומות</div>
+<table *ngIf="typedonorshow">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let i of listTypeDonor">
+            <td>{{i.id}}</td>
+            <td>{{i.nameType}}</td>
+        </tr>
+    </tbody>
+</table> -->

@@ -1,0 +1,15 @@
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Service\bin\Debug\net6.0\Association.Service.deps.json
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Service\bin\Debug\net6.0\Association.Service.dll
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Service\bin\Debug\net6.0\Association.Service.pdb
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Service\obj\Debug\net6.0\Association.Service.csproj.AssemblyReference.cache
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Service\obj\Debug\net6.0\Association.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Service\obj\Debug\net6.0\Association.Service.AssemblyInfoInputs.cache
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Service\obj\Debug\net6.0\Association.Service.AssemblyInfo.cs
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Service\obj\Debug\net6.0\Association.Service.csproj.CoreCompileInputs.cache
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Service\obj\Debug\net6.0\Association.Service.dll
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Service\obj\Debug\net6.0\refint\Association.Service.dll
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Service\obj\Debug\net6.0\Association.Service.pdb
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Service\obj\Debug\net6.0\ref\Association.Service.dll
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Service\bin\Debug\net6.0\Association.Core.dll
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Service\bin\Debug\net6.0\Association.Core.pdb
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Service\obj\Debug\net6.0\Association.Service.csproj.CopyComplete

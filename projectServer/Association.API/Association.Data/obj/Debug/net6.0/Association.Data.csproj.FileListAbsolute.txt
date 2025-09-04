@@ -1,0 +1,17 @@
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Data\obj\Debug\net6.0\Association.Data.csproj.AssemblyReference.cache
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Data\obj\Debug\net6.0\Association.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Data\obj\Debug\net6.0\Association.Data.AssemblyInfoInputs.cache
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Data\obj\Debug\net6.0\Association.Data.AssemblyInfo.cs
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Data\obj\Debug\net6.0\Association.Data.csproj.CoreCompileInputs.cache
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Data\bin\Debug\net6.0\Association.Data.deps.json
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Data\bin\Debug\net6.0\Association.Data.runtimeconfig.json
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Data\bin\Debug\net6.0\Association.Data.dll
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Data\bin\Debug\net6.0\Association.Data.pdb
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Data\bin\Debug\net6.0\Association.Core.dll
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Data\bin\Debug\net6.0\Association.Core.pdb
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Data\obj\Debug\net6.0\Association.Data.csproj.CopyComplete
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Data\obj\Debug\net6.0\Association.Data.dll
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Data\obj\Debug\net6.0\refint\Association.Data.dll
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Data\obj\Debug\net6.0\Association.Data.pdb
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Data\obj\Debug\net6.0\Association.Data.genruntimeconfig.cache
+C:\Users\USER\OneDrive\שולחן העבודה\תיכנות\אנגולר פרויקט\Association.API\Association.Data\obj\Debug\net6.0\ref\Association.Data.dll

@@ -1,0 +1,48 @@
+.form{  
+    color: #555;
+    font-family: 'Amarante', Tahoma, sans-serif;
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    background-color: rgb(83 112 136 / 20%);
+    border-radius: 5px;
+    height: 40%;
+    width: 30%;
+    margin-top: 60px;
+}
+.input{
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    width: 90%;
+    height: 45px;
+    margin: 10px;
+    text-align: right;
+    font-size: larger;
+}
+h1{
+    font-size: 3.9em;
+    font-weight: bold;
+    margin: auto;
+    font-family: 'Amarante', Tahoma, sans-serif;
+    text-align: center;
+    color: #555;
+    margin-top: 67px;
+
+}
+
+.add{
+    font-size:0.9em;
+    font-weight: bold;
+    padding: 10px;
+    margin: auto; 
+    font-family: 'Amarante', Tahoma, sans-serif;
+    line-height: 1.7em;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #555;
+    padding: 6px;
+    width: 20%;
+    height: 5%;
+    margin-top: 20px;
+}
