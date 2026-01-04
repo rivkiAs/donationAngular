@@ -42,7 +42,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("NetlifyPolicy",
         policy =>
         {
-            policy.WithOrigins("https://super-cannoli-8c7615.netlify.app/") // הכתובת של Netlify
+            policy.WithOrigins("https://super-cannoli-8c7615.netlify.app") // הכתובת של Netlify
                   .AllowAnyHeader()
                   .AllowAnyMethod();
         });
