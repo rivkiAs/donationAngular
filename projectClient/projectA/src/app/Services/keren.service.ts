@@ -8,7 +8,7 @@ import { Keren } from '../Models/Keren';
 export class KerenService {
   
   
-  url='https://localhost:7180/api/Keren';
+  url='https://super-cannoli-8c7615.netlify.app';
   constructor(private http:HttpClient) { 
   }
   getKerens():Observable<Keren[]>
