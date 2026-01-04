@@ -7,7 +7,7 @@ import { Donor } from '../Models/Donor';
 })
 export class DonorService {
 
-  url='https://localhost:7180/api/Donor';
+  url='https://super-cannoli-8c7615.netlify.app';
   constructor(private http:HttpClient) { 
   }
   login(tz:string):Observable<number>
