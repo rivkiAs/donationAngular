@@ -1,10 +1,10 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-# העתקת כל הקבצים לתוך ה-Docker
+# העתקת כל הקבצים לתוך סביבת הבנייה
 COPY . .
 
-# הרצת Restore ו-Publish לכל פרויקט שנמצא בתיקייה (חוסך בעיות של שמות קבצים)
+# הרצת בנייה גלובלית - זה ימצא את ה-csproj לבד
 RUN dotnet restore
 RUN dotnet publish -c Release -o /app/publish
 
