@@ -8,41 +8,38 @@ using System.Text.Json.Serialization;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddControllers().AddJsonOptions(
     options =>
     {
         options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
         options.JsonSerializerOptions.WriteIndented = true;
     }
-    );
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+);
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Dependency Injection
 builder.Services.AddScoped<ICitiesRepository, CitiesRepository>();
 builder.Services.AddScoped<ICitiesService, CitiesService>();
-
 builder.Services.AddScoped<IDonorRepository, DonorRepository>();
 builder.Services.AddScoped<IDonorService, DonorService>();
-
 builder.Services.AddScoped<IDonationRepository, DonationRepository>();
 builder.Services.AddScoped<IDonationService, DonationService>();
-
 builder.Services.AddScoped<IDonationTypeRepository, DonationTypeRepository>();
 builder.Services.AddScoped<IDonationTypeService, DonationTypeService>();
-
 builder.Services.AddScoped<IKerenRepository, kerenRepository>();
 builder.Services.AddScoped<IKerenService, KerenService>();
 
 builder.Services.AddDbContext<DataContext>();
 
+// הגדרת CORS
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("NetlifyPolicy",
         policy =>
         {
-            policy.WithOrigins("https://super-cannoli-8c7615.netlify.app") // הכתובת של Netlify
+            policy.WithOrigins("https://super-cannoli-8c7615.netlify.app")
                   .AllowAnyHeader()
                   .AllowAnyMethod();
         });
@@ -50,23 +47,15 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
+// חשוב: הפעלת ה-CORS חייבת לבוא לפני ה-MapControllers
 app.UseCors("NetlifyPolicy");
 
+// הצגת Swagger גם ב-Production (ב-Render) כדי שתוכלי לבדוק שהשרת עובד
+app.UseSwagger();
+app.UseSwaggerUI();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
-app.UseCors(x => x
-.AllowAnyOrigin()
-.AllowAnyMethod()
-.AllowAnyHeader());
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
 
 app.Run();
