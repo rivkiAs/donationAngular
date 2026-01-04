@@ -5,7 +5,7 @@ WORKDIR /src
 # העתקת כל הקבצים
 COPY . .
 
-# הרצת ה-Restore וה-Publish
+# הרצת ה-Restore וה-Publish ללא ציון שם קובץ ספציפי
 RUN dotnet restore
 RUN dotnet publish -c Release -o /app/publish
 
@@ -14,9 +14,9 @@ FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS final
 WORKDIR /app
 COPY --from=build /app/publish .
 
-# הגדרת פורט ל-Render
+# הגדרת פורט חובה עבור Render
 ENV ASPNETCORE_URLS=http://+:10000
 EXPOSE 10000
 
-# הרצת האפליקציה
+# הרצת האפליקציה (ודאי ששם ה-DLL תואם לשם הפרויקט שלך)
 ENTRYPOINT ["dotnet", "Association.API.dll"]
