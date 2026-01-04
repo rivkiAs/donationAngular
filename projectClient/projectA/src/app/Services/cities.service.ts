@@ -7,7 +7,7 @@ import { Cities } from '../Models/Cities';
   providedIn: 'root'
 })
 export class CitiesService {
-url="https://localhost:7180/api/Cities"
+url="https://super-cannoli-8c7615.netlify.app"
   constructor(private http:HttpClient) { 
     }
 allCities():Observable<Cities[]>
