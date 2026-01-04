@@ -1,20 +1,22 @@
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+# השתמש ב-SDK 6.0 לבנייה
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 
-# מעתיק את כל התוכן של התיקייה לתוך ה-Docker
+# העתקת כל הקבצים
 COPY . .
 
-# הרצת פקודות ללא ציון שם קובץ ספציפי (זה ימצא את ה-csproj לבד)
+# הרצת ה-Restore וה-Publish
 RUN dotnet restore
 RUN dotnet publish -c Release -o /app/publish
 
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
+# השתמש ב-Runtime 6.0 להרצה
+FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS final
 WORKDIR /app
 COPY --from=build /app/publish .
 
-# הגדרת פורט חובה עבור Render
+# הגדרת פורט ל-Render
 ENV ASPNETCORE_URLS=http://+:10000
 EXPOSE 10000
 
-# הרצת השרת (ודאי ששם ה-DLL תואם לשם הפרויקט שלך)
+# הרצת האפליקציה
 ENTRYPOINT ["dotnet", "Association.API.dll"]
