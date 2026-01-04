@@ -36,9 +36,21 @@ builder.Services.AddScoped<IKerenRepository, kerenRepository>();
 builder.Services.AddScoped<IKerenService, KerenService>();
 
 builder.Services.AddDbContext<DataContext>();
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("NetlifyPolicy",
+        policy =>
+        {
+            policy.WithOrigins("https://super-cannoli-8c7615.netlify.app/") // הכתובת של Netlify
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
+        });
+});
+
 var app = builder.Build();
 
-
+app.UseCors("NetlifyPolicy");
 
 
 // Configure the HTTP request pipeline.
