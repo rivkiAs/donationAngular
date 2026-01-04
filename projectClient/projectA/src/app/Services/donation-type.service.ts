@@ -8,7 +8,7 @@ import { Observable } from 'rxjs/internal/Observable';
 })
 export class DonationTypeService {
 
-  url='https://localhost:7180/api/DonationType';
+  url='https://super-cannoli-8c7615.netlify.app';
   constructor(private http:HttpClient) { }
 
   getDT():Observable<DonationType[]>
