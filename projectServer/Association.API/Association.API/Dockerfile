@@ -1,10 +1,10 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-# העתקת כל הקבצים לתוך סביבת הבנייה
+# העתקת כל הקבצים לתוך ה-Container
 COPY . .
 
-# הרצת בנייה גלובלית - זה ימצא את ה-csproj לבד
+# פקודות בנייה שלא דורשות שם קובץ ספציפי - זה ימצא את ה-csproj לבד
 RUN dotnet restore
 RUN dotnet publish -c Release -o /app/publish
 
@@ -16,5 +16,5 @@ COPY --from=build /app/publish .
 ENV ASPNETCORE_URLS=http://+:10000
 EXPOSE 10000
 
-# שימי לב: ודאי שהשם כאן תואם לשם ה-DLL שנוצר (בדרך כלל שם הפרויקט)
+# הרצת ה-DLL (ודאי ששם הקובץ תואם לשם הפרויקט שלך)
 ENTRYPOINT ["dotnet", "Association.API.dll"]
